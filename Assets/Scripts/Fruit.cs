@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Fruit : MonoBehaviour
 {
-    public float fruitSpeed;
-    public Vector2 movementDirection;
+    float fruitSpeed = 3f;
+    public Vector2 movementDirection = new Vector2(1,0);
     void Update()
     {
-        transform.Translate(fruitSpeed * movementDirection.x, fruitSpeed * movementDirection.y, 0);
+        transform.Translate(fruitSpeed * movementDirection.x * Time.deltaTime, fruitSpeed * movementDirection.y * Time.deltaTime, 0);
 
     }
     void OnTriggerEnter2D(Collider2D col)

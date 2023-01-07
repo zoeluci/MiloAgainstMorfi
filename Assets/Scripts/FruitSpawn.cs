@@ -4,10 +4,17 @@ using UnityEngine;
 
 public class FruitSpawn : MonoBehaviour
 {
-    public GameObject fruit;
-    // Start is called before the first frame update
-    void Start()
+    float time;
+    public float spawnTime;
+    public GameObject[] fruitPrefabs;
+
+    void Update()
     {
-        Instantiate(fruit, transform);
+        time += Time.deltaTime;
+        if(time > spawnTime)
+        {
+            Instantiate(fruitPrefabs[Random.Range(0, fruitPrefabs.Length)], transform);
+            time = 0;
+        }
     }
 }
