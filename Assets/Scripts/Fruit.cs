@@ -9,7 +9,6 @@ public class Fruit : MonoBehaviour
     void Update()
     {
         transform.Translate(speed * movementDirection.x * Time.deltaTime, speed * movementDirection.y * Time.deltaTime, 0);
-
     }
     void OnTriggerEnter2D(Collider2D col)
     {

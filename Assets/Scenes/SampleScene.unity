@@ -153,10 +153,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnTime: 0.4
+  fruitSpeed: 4
+  fruitProbability: 0.7
   fruitPrefabs:
   - {fileID: 2856338521399364511, guid: f13416a251b12284ca9512531179017f, type: 3}
   - {fileID: 3507351614375457115, guid: 3ff8bfed6df4d1b46b2ffc36c0c83904, type: 3}
   - {fileID: 9201290515044114676, guid: f51e91b65a926604d90d3eb03e0fb0af, type: 3}
+  nonFruitPrefabs:
+  - {fileID: 204895824236619307, guid: c03b254bbb994ea4bbe158397ae27951, type: 3}
+  - {fileID: 8749731824146390580, guid: f6455b5595208914884e91c47ed5634a, type: 3}
 --- !u!4 &312806509
 Transform:
   m_ObjectHideFlags: 0
