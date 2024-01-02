@@ -17,4 +17,11 @@ public class Fruit : MonoBehaviour
             movementDirection = col.gameObject.GetComponent<TurnTrigger>().turnDirection;
         }
     }
+    void OnMouseOver()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Destroy(gameObject);
+        }
+    }
 }
